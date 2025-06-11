@@ -19,7 +19,7 @@ public class Initializer {
     protected static AtomicBoolean success  = new AtomicBoolean(false);
     protected static String ASSEMBLER_KEY = "assembler.early";
     private static String INCLUDE_KEY = "include.file";
-    protected static String DEFAULT_PROPERY_NAME = "ap.properties";
+    protected static String DEFAULT_PROPERY_NAME = "application.properties";
     protected static String path;
 
     synchronized static public void init(String path) {

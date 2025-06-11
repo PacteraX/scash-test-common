@@ -7,7 +7,7 @@ import boot.Initializer;
 import core.util.UFile;
 
 public class CcaUTest {
-    private static final String CONF_PATH = "conf/";
+    private static final String CONF_PATH = "src/main/resources/";
     public static final Properties DEFAULT = new Properties();
     public static void init(){
         system.boot.Initializer.init(UFile.getAbsoluteDirectoryPath() + CONF_PATH);

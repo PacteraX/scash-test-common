@@ -4,7 +4,7 @@
   <groupId>com.senko.scash</groupId>
   <artifactId>scash-test-common</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.1</version>
+  <version>1.1.4</version>
 
   <repositories>
     <repository>
@@ -13,33 +13,14 @@
       <url>https://repo.maven.apache.org/maven2</url>
     </repository>
   </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <id>deploy-aslead-nexus</id>
-      <name>DeployAsleadNexus</name>
-      <url>https://repo.maven.apache.org/maven2</url>
-    </pluginRepository>
-  </pluginRepositories>
 
   <dependencies>
-    <dependency>
-      <groupId>org.jacoco</groupId>
-      <artifactId>jacoco-maven-plugin</artifactId>
-      <version>0.8.10</version>
-      <scope>compile</scope>
-    </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <version>4.0.1</version>
       <scope>provided</scope>
     </dependency>
-<!--    <dependency>-->
-<!--      <groupId>com</groupId>-->
-<!--      <artifactId>com.vladium.utils</artifactId>-->
-<!--      <version>1.0</version>-->
-<!--      <scope>compile</scope>-->
-<!--    </dependency>-->
     <dependency>
       <groupId>commons-beanutils</groupId>
       <artifactId>commons-beanutils</artifactId>
@@ -90,12 +71,6 @@
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>7.4.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.jacoco</groupId>
-      <artifactId>jacoco-maven-plugin</artifactId>
-      <version>0.8.10</version>
       <scope>compile</scope>
     </dependency>
     <dependency>

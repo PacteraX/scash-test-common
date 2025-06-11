@@ -8,7 +8,7 @@ public interface PathFilenamePropkey {
     // path, filename , propertykeys (used globally)
 
     // propertyKeys
-    String AP_CONFIG_FILE        = "ap.properties";
+    String AP_CONFIG_FILE        = "application.properties";
 
     String ASSEMBLER             = "assembler.";
     String ASSEMBLER_EARLY       = ASSEMBLER + "early";
