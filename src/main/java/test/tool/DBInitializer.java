@@ -25,17 +25,6 @@ public class DBInitializer {
         SIMDB,
     }
 
-//    protected static final String SEQ_COMMAND;
-//    static {
-//        try {
-////            Properties props = new Properties();
-////            props.load(new FileInputStream("./resources/test-conf/test.properties"));
-////            SEQ_COMMAND = props.getProperty("test.seq.command");
-//        } catch (Exception e) {
-//            throw new RuntimeException(e);
-//        }
-//    }
-
     private static final String DB_URL;
     private static final String DB_USER;
     private static final String DB_PASS;

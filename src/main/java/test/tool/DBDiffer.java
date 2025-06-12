@@ -372,14 +372,10 @@ public class DBDiffer {
             }
             // SEQNUM以外
             else {
-                if (columnsMap.get(columns[i].toUpperCase()) != null && columnsMap.get(columns[i].toUpperCase()).toString().equals("CLOB")) {
-                    query.append("dbms_lob.substr( " + columns[i] +", length(" + columns[i] + "), 1 )").append("='").append(values[i].equals("") ? "`" : values[i]).append("'");
+                if (isNull(values[i])) {
+                    query.append("(").append(columns[i]).append(" IS NULL ").append(" OR ").append(columns[i]).append(" ='' ").append(")");
                 } else {
-                    if (isNull(values[i])) {
-                        query.append("(").append(columns[i]).append(" IS NULL ").append(")");
-                    } else {
-                        query.append(columns[i]).append("='").append(values[i].replace("'", "''")).append("'");
-                    }
+                    query.append(columns[i]).append("='").append(values[i]).append("'");
                 }
             }
         }
